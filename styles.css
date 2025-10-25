@@ -42,3 +42,29 @@ body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;b
   .nav-links{display:none}
   .hamburger{display:block}
 }
+
+/* Default header style */
+.site-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: transparent;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  z-index: 1000;
+}
+
+/* When scrolled */
+.site-header.scrolled {
+  background-color: rgba(200, 213, 255, 0.95); /* or your color */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Example for changing link colors when scrolled */
+.site-header.scrolled a {
+  color: #000; /* darker text when scrolled */
+}
+
+.site-header a {
+  color: white; /* light text initially */
+  transition: color 0.3s ease;
+}
