@@ -71,3 +71,8 @@ body.scrolled .site-header {
   background: rgba(0,0,0,0.75);
   backdrop-filter: blur(6px);
 }
+
+.hero {
+  margin-top: -72px; /* pulls image up under header */
+  height: calc(100vh + 72px);
+}
