@@ -137,3 +137,30 @@ body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;b
 .site-header.dark a {
   color: #000;
 }
+
+/*reservation page s*/
+.reservation {
+  padding: 20px;
+  text-align: center;
+}
+
+.thefork {
+  width: 100%;
+  border: 0;
+  overflow: auto;
+}
+
+@media (max-width: 320px) {
+  .thefork { min-height: 840px; }
+}
+@media (min-width: 321px) and (max-width: 516px) {
+  .thefork { min-height: 650px; }
+}
+@media (min-width: 517px) {
+  .thefork { min-height: 550px; }
+}
+
+.reservation-open-btn {
+  text-align: center;
+  margin-top: 14px;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book a Table | Sol el Luna</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <!-- Include your existing site header -->
+   <header class="site-header">
+    <div class="container nav">
+      <a class="logo" href="#">Sol el Luna</a>
+      <nav id="mainnav" class="nav-links">
+        <a href="#about">About</a>
+        <a href="#alacarte">A La Carte</a>
+        <a href="#lunch">Lunch</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+        <a class="btn" href="#reservation">Book a table</a>
+      </nav>
+      <button class="hamburger" aria-label="Menu" onclick="toggleMenu()">☰</button>
+    </div>
+  </header>
+
+  <!-- Main content -->
+  <main style="padding-top: 120px; max-width: 900px; margin: 0 auto;">
+    <section id="reservation" class="reservation">
+      <h1>Book a Table</h1>
+      <p>Reserve your spot at Sol el Luna for tapas, cocktails, and good vibes in De Pijp.</p>
+
+      <!-- Replace WIDGET_URL_HERE with your TheFork widget URL -->
+      <iframe
+        class="thefork"
+        title="TheFork booking widget"
+        src="WIDGET_URL_HERE"
+        loading="lazy"
+        allowtransparency="true"
+      ></iframe>
+
+      <!-- Optional fallback -->
+      <p class="reservation-open-btn">
+        <a class="btn" href="WIDGET_URL_HERE" target="_blank" rel="noopener">
+          Open booking in a new tab
+        </a>
+      </p>
+    </section>
+  </main>
+
+  <!-- Footer (reuse same as index) -->
+  <footer>
+    <p>© 2025 Sol el Luna — All rights reserved.</p>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+</html>
