@@ -71,13 +71,3 @@ body.scrolled .site-header {
   background: rgba(0,0,0,0.75);
   backdrop-filter: blur(6px);
 }
-
-.site-header a {
-  color: white;
-  transition: color 0.3s ease;
-}
-
-/* Optional: make text darker when background brightens */
-.site-header.dark a {
-  color: #000;
-}
